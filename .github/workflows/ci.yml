@@ -62,7 +62,7 @@ jobs:
             arduino-cli core update-index
             arduino-cli lib update-index
             arduino-cli lib install WiFiNINA
-            arduino-cli lib install EthernetUdp
+            arduino-cli lib install Ethernet
             arduino-cli lib install "STM32duino X-NUCLEO-IKS01A3"
             arduino-cli lib install "Seeed Arduino rpcWiFi" # Dependent libraries(e.g. "Seeed Arduino rpcUnified") will be installed together. See https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/#needed-libraries-for-wi-fi for more details.
             # Build all demos
@@ -89,7 +89,7 @@ jobs:
             # Arduino-cli compile --fqbn arduino:mbed:envie_m4 /github/home/Arduino/libraries/micro_ros_arduino/examples/micro-ros_publisher -v
             # arduino-cli compile --fqbn arduino:mbed:envie_m7 /github/home/Arduino/libraries/micro_ros_arduino/examples/micro-ros_publisher -v
             # arduino-cli compile --fqbn arduino:mbed:envie_m7 /github/home/Arduino/libraries/micro_ros_arduino/examples/micro-ros_publisher_wifi -v
-            # arduino-cli compile --fqbn arduino:mbed_giga:giga /github/home/Arduino/libraries/micro_ros_arduino/examples/micro-ros_publisher -v
+             arduino-cli compile --fqbn arduino:mbed_giga:giga /github/home/Arduino/libraries/micro_ros_arduino/examples/micro-ros_publisher_ethernet -v
             # arduino-cli compile --fqbn esp32:esp32:esp32 /github/home/Arduino/libraries/micro_ros_arduino/examples/micro-ros_publisher -v
             # arduino-cli compile --fqbn esp32:esp32:esp32 /github/home/Arduino/libraries/micro_ros_arduino/examples/micro-ros_publisher_wifi -v
             # arduino-cli compile --fqbn Seeeduino:samd:seeed_wio_terminal /github/home/Arduino/libraries/micro_ros_arduino/examples/micro-ros_publisher_wifi -v
